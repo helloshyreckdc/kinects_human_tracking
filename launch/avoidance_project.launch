@@ -1,5 +1,4 @@
 <launch>
-	<include file="$(find ur_modern_driver)/launch/ur5_launch_whole_project.launch" />
 
 	<include file="$(find openni2_launch)/launch/openni2.launch" />
 
@@ -12,12 +11,11 @@
 	<include file="$(find kinects_human_tracking)/launch/kinect_img_bg_sub.launch" />
 
 	<include file="$(find kinects_human_tracking)/launch/create_pc.launch" />
-
-	<include file="$(find kinects_human_tracking)/launch/kinect_merge.launch">
-		<remap from="topic_name1" to="/camera/depth_registered/downsampled_filtered_points" />
-	</include>
-
-	<include file="$(find kinects_human_tracking)/launch/closest_pt_tracking.launch" />
+	
+	<include file="$(find kinects_human_tracking)/launch/kinect_merge.launch" />
+		
+	
+	
 
 </launch>
 	
