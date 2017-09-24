@@ -14,8 +14,9 @@
 	
 	<include file="$(find kinects_human_tracking)/launch/kinect_merge.launch" />
 		
+	<include file="$(find kinects_human_tracking)/launch/closest_pt_tracking.launch" />
 	
-	
+	<include file="$(find ur_modern_driver)/launch/ur5_distance_control.launch" />
 
 </launch>
 	
